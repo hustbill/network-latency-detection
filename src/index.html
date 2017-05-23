@@ -1,6 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>D3 in Action Adjacency Matrix</title>
+  <title>Network Latency Detection - Adjacency Matrix</title>
   <meta charset="utf-8" />
 </head>
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -76,8 +76,14 @@ path.domain {
       .attr("y", function (d) {return d.y * 50})
       .style("stroke", "black")
       .style("stroke-width", "1px")
-      .style("fill", "red")
-      .style("fill-opacity", function (d) {return d.weight * .2})
+      .style("fill", function (d) {if (d.weight > 10) return "red"
+        else if (d.weight <= 10 && d.weight >= 0.5) {
+          return "yellow"
+        }
+        else {
+          return "green"
+        }
+      })
       .on("mouseover", gridOver)
 
       var scaleSize = nodes.length * 50;
@@ -89,7 +95,7 @@ path.domain {
       d3.select("#adjacencyG").append("g").call(yAxis);
 
       function gridOver(d,i) {
-        d3.selectAll("rect").style("stroke-width", function (p) {return p.x == d.x || p.y == d.y ? "3px" : "1px"})
+        d3.selectAll("rect").style("stroke-width", function (p) {return p.x == d.x || p.y == d.y ? "1.5px" : "1px"})
       }
 
     }
