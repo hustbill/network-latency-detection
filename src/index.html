@@ -5,6 +5,7 @@
 </head>
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="http://d3js.org/queue.v1.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <style>
 .tick line {
   shape-rendering: crispEdges;
@@ -29,6 +30,11 @@ path.domain {
 </div>
   <footer>
 <script>
+  axios.get('https://api.github.com/users/hustbill')
+  .then(function(response){
+    console.log(response.data); // ex.: { user: 'Your User'}
+    console.log(response.status); // ex.: 200
+  });
 
   function adjacency() {
 
