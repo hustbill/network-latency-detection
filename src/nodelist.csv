@@ -1,4 +1,5 @@
-id,followers,following
-k8s-node1,17,500
-k8s-node2,7,5
-k8s-node3,150,300
+id
+k8s-node1
+k8s-node2
+k8s-node3
+k8s-node4
