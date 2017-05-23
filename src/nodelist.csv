@@ -1,8 +1,4 @@
 id,followers,following
-c1,17,500
-c2,7,5
-c3,150,300
-c4,11,50
-c5,904,15
-c6,83,80
-c7,80,85
+k8s-node1,17,500
+k8s-node2,7,5
+k8s-node3,150,300
