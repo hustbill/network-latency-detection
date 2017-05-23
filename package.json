@@ -1,0 +1,23 @@
+{
+  "name": "network-latency-detection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hustbill/network-latency-detection.git"
+  },
+  "keywords": [],
+  "author": "Bill Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hustbill/network-latency-detection/issues"
+  },
+  "homepage": "https://github.com/hustbill/network-latency-detection#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
