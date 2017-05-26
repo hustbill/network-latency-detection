@@ -13,4 +13,12 @@ http://localhost:8081
 ```code
 container -> veth0 -> docker 0 -> flannel0 -> eth
 ``` 
+## Run 
+start a http server  
+```code
+python -m SimpleHTTPServer  
+```
+
+visit the url:  
+http://localhost:8000
 
