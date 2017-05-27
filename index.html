@@ -17,11 +17,14 @@
   <script type="text/javascript" src="js/bar.js"></script>
   <script type="text/javascript" src="js/csv.js"></script>
    <script src="lib/cytoscape.min.js"></script>
+   <!-- dagre Chart  -->
+   <!-- http://js.cytoscape.org/demos/dagre-layout/ -->
+   <script src="https://cdn.rawgit.com/cpettitt/dagre/v0.7.4/dist/dagre.min.js"></script>
+   <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-dagre/1.5.0/cytoscape-dagre.js"></script>
 
   </head>
-  <body>
-   <!-- <body onload="adjacency()"> -->
-    <!-- <div id="vizcontainer">
+   <body onload="adjacency()">
+    <div id="vizcontainer">
     <svg style="width:500px;height:500px;border:1px lightgray solid;" />
     </div>
       <footer>
@@ -42,9 +45,13 @@
 
        init();
     </script>
-    <br/> -->
-    <div id="cy"></div>
+    <br/>
+    <div id="vizcontainer2">
+    <svg style="left:800px;width:600px;height:600px;border:2px lightgray solid;" />
+    <div id="cy" style="left:600px;height:600px; width:600px; background:#000000"></div>
     <!-- Load appplication code at the end to ensure DOM is loaded -->
     <script src="js/code.js"></script>
+    </div>
+
   </body>
 </html>
