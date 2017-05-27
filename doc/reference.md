@@ -3,6 +3,12 @@
 ## Using cytoscape.js
 [dagre-layout](http://js.cytoscape.org/demos/dagre-layout/)  
 
+## Adjacency Matrix
+[Adjacency Matrix from Node/Edge List](http://bl.ocks.org/emeeks/9441864)
+
+## Playing With React and D3  
+[playing-with-react-and-d3](https://github.com/freddyrangel/playing-with-react-and-d3/tree/master/finished/src/components)
+
 ## Basic CSV Parsing Using SigmaJS
 
 [Basic CSV Parsing](http://bl.ocks.org/enjalot/1525346)
